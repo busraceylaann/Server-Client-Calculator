@@ -2,9 +2,9 @@ import socket
 server = socket.socket()
 
 host = socket.gethostname()
-port = 1234
+port = 4444
 server.bind((host, port))
-server.listen(5)
+server.listen(1)
 print("Server Çalışıyor")
 
 

@@ -11,7 +11,7 @@ signal.signal(signal.SIGINT, signal_handler)
 
 try:
     host = socket.gethostname()
-    port = 1234
+    port = 4444
     server.connect((host, port))
     while(True):
 
