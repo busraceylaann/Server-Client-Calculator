@@ -1,6 +1,5 @@
 FROM python:latest
-ADD Server.py /server/
+ADD Server.py /server/Server.py
 WORKDIR /server/
-RUN python Server.py
-EXPOSE 80
-CMD ["python","Server"]
+EXPOSE 4444
+CMD ["python","Server.py"]

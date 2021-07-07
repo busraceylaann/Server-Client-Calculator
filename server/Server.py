@@ -1,9 +1,10 @@
 import socket
 
 host = "0.0.0.0"  #socket.gethostname()
-port = 80
+port = 4444
 server = socket.socket()
 server.bind((host, port))
+# why u r waiting five connection
 server.listen(5)
 print("Server Çalışıyor")
 

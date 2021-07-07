@@ -1,5 +1,4 @@
 FROM python:latest
-ADD Client.py /client/
+ADD Client.py /client/Client.py
 WORKDIR /client/
-RUN python Client.py
-CMD ["python","Client"]
+ENTRYPOINT ["python", "Client.py"]
